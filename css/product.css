@@ -1,0 +1,49 @@
+.content img{
+	width: 150px;
+	height: 150px;
+}
+
+.content > div{
+	padding: 5%;
+}
+
+.content td{
+	font-size: 1.3em;
+}
+
+.content div p{
+	font-size: 1.2em;
+}
+
+.content div p:nth-child(2){
+	font-size: 2em;
+}
+
+.content{
+	background-color: #EEE;
+}
+
+@media only screen and (max-width: 400px){
+
+	.content > div{
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 4%;
+		padding-bottom: 4%;
+		text-align: center;
+	}
+
+	.content{
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+
+	.content div p{
+		font-size: 1em;
+	}
+
+	.content div p:nth-child(2){
+		font-size: 1.2em;
+	}
+
+}

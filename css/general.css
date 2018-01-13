@@ -1,0 +1,251 @@
+/*
+#1DB6A3
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	font-family: raleway;
+}
+
+@font-face{
+	font-family: raleway;
+	src: url('../asset/font/Raleway-Light.ttf');
+}
+
+.clear{
+	clear: both;
+}
+
+#currPage{
+	color: #1DB6A3;
+}
+
+/*navigation*/
+/*----------------------------------------*/
+
+.navigation{
+	font-family: june;
+	position: fixed;
+	width: 100%;
+	background-color: #FFF;
+	font-size: 1.5em;
+	z-index: 9999;
+}
+
+.navigation > div a, .drop-down a{
+	text-decoration: none;
+	color: #000;
+}
+
+.navigation > div, .drop-down, .sub-item{
+	text-align: center;
+	float: left;
+}
+
+.navigation > div p, .drop-down p{
+	padding: 20px;
+}
+
+.navigation > div p a:hover, .sub-item p a:hover{
+	color: #1DB6A3;
+}
+
+.sub-item{
+	display: none;
+	position: absolute;
+	background-color: #FFF;
+	color: #FFF;
+}
+
+.drop-down:hover .sub-item{
+	display: block;
+}
+
+.navigation div img{
+	padding: 10px;
+	float: left;
+	width: 100px;
+	height: 50px;
+	display: block;
+}
+
+/*header*/
+/*----------------------------------------*/
+
+.header{
+	height: 100vh;
+	background-image:url(../asset/images/Logo%20Jalanyuk.png);
+	animation-name: bg;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+@keyframes bg{
+	0%{
+		background-size: 100% 100%;
+	}
+	10%{
+		background-size: 120% 120%;
+	}
+	50%{
+		background-size: 120% 120%;
+	}
+	60%{
+		background-size: 100% 100%;
+	}
+	100%{
+		background-size: 100% 100%;	
+	}
+}
+
+.header p{
+	font-size: 2em;
+	width: 30%;
+	padding-top: 15%;
+	padding-left: 10%;
+}
+
+/*footer*/
+/*----------------------------------------*/
+
+.footer{
+	background-color: #111;
+	color: #FFF;
+	padding-left: 10%;
+	padding-top: 5%;
+	height: 40vh;
+	text-transform: uppercase;
+}
+
+.footer > div{
+	float: left;
+	width: 50%;
+}
+
+.footer img{
+	width: 50px;
+	height: 50px;
+	background-color: #FFF;
+	border-radius: 100%;
+}
+
+.footer-1 > div{
+	display: inline-block;
+	padding: 1%;
+}
+
+.footer-1 > div:nth-child(1){
+	display: block;
+}
+
+/*responsive*/
+/*----------------------------------------*/
+@media only screen and (max-width: 635px){
+
+	*{
+		font-size: 1em;
+	}
+
+	.navigation{
+		position: static;
+	}
+
+	.navigation > div, .drop-down, .sub-item{
+		float: none;
+		width: 100%;
+	}
+
+	.navigation > div:nth-child(5){
+		width: 100%;
+	}
+
+	.sub-item{
+		position: relative;
+	}
+
+	.navigation div img{
+		display: none;
+	}
+	
+	.header{
+		height: 10vh;
+		padding: 0;
+		padding-top: 100%;
+		animation-name: none;
+	}
+
+	.header p{
+		width: 100%;
+		position: absolute;
+		top: 50%;
+	}
+	
+}
+
+@media only screen and (max-width: 800px){
+	
+	.navigation{
+		font-size: 1em;
+	}
+
+	.header p{
+		font-size: 2em;
+		width: 80%;
+	}
+
+}
+
+@media only screen and (max-width: 400px){
+
+	.navigation{
+		font-size: 1em;
+	}
+
+	.header p{
+		font-size: 2em;
+		width: 80%;
+	}
+
+	*{
+		font-size: 1em;
+	}
+
+	.navigation{
+		position: static;
+	}
+
+	.navigation > div, .drop-down, .sub-item{
+		float: none;
+		width: 100%;
+	}
+
+	.navigation > div:nth-child(5){
+		width: 100%;
+	}
+
+	.sub-item{
+		position: relative;
+	}
+
+	.navigation div img{
+		display: none;
+	}
+	
+	.header{
+		height: 10vh;
+		padding: 0;
+		padding-top: 100%;
+		animation-name: none;
+	}
+
+	.header p{
+		width: 100%;
+		position: absolute;
+		top: 50%;
+	}
+
+}

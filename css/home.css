@@ -1,0 +1,228 @@
+/*slider*/
+/*---------------------------------------------*/
+
+.slider{
+	padding-top: 2%;
+	width: 600px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.slider-container{
+	width: 400%;
+}
+
+.slider-container img{
+	width: 600px;
+	height: 200px;
+	float: left;
+}
+
+
+/*content 1*/
+/*----------------------------------------*/
+
+.content{
+	background-color: #EEE;
+}
+
+.content-1{
+	height: 100vh;
+}
+
+.content-1-title{
+	font-size: 3em;
+	text-align: center;
+	color: #1DB6A3;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.content-1-text{
+	padding: 5%;
+	width: 40%;
+	display: inline-block;
+}
+
+.content-1-text p:nth-child(1){
+	font-size: 2em;
+	text-align: left;
+}
+
+.content-1-text p:nth-child(2){
+	font-size: 1.3em;
+	text-align: left;
+	width: 80%;
+}
+
+/*content 2*/
+/*----------------------------------------*/
+.content-2{
+	height: 70vh;
+	background-image:url(../asset/images/bromo.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	opacity: 100px;
+}
+
+.content-2-text{
+	padding: 5%;
+	font-size: 3em;
+	text-align: center;
+	color: #FFF;
+}
+
+.content-2-product > div{
+	float: right;
+	width: 30%;
+}
+
+.content-2-product > div > div{
+	width: 200px;
+	height: 200px;
+	background-size: 100% 100%;
+}
+
+.content-2-product > div:nth-child(1) div{
+	background-image: url('../asset/images/download.jpg');
+}
+
+.content-2-product > div:nth-child(2) div{
+	background-image: url('../asset/images/botani.jpg');
+}
+
+.content-2-product > div:nth-child(3) div{
+	background-image: url('../asset/images/bromo.jpg');
+}
+
+.content-2-product > div > div:hover{
+	background-size: 200% 200%;
+	background-position: center;
+	animation-name: zzoom;
+	animation-duration: 1s;
+}
+
+@keyframes zzoom{
+	0%{
+		background-size: 100% 100%;
+	}
+	100%{
+		background-size: 200% 200%;
+	}
+}
+
+
+/*responsive*/
+/*----------------------------------------*/
+@media only screen and (min-width: 401px) and (max-width: 1124px){
+
+	.slider{
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+	.slider-container > img{
+		width: 25%;
+	}
+	
+	.content-1{
+		height: 100%;
+		padding-bottom: 20%;
+	}
+	
+	.content-1-text, .content-2-text{
+		width: 100%;
+	}
+
+	.content-1-text{
+		padding: 0%;
+	}
+
+	.content-2{
+		height: 100%;
+		padding-bottom: 20%;
+	}
+
+	.content-2-text{
+		width: 100%;
+		padding: 0;
+	}
+
+	.content-2-product > div{
+		float: none;
+		width: 100%;
+	}
+
+	.content-2-product > div > div{
+		margin-left: 10%;
+		width: 80%;
+		height: 100px;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 400px){
+	
+	.slider{
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+	.slider-container > img{
+		width: 25%;
+	}
+	
+	.content-1{
+		height: 100%;
+		padding-bottom: 20%;
+	}
+	
+	.content-1-text, .content-2-text{
+		width: 100%;
+	}
+
+	.content-1-text{
+		padding: 0%;
+	}
+
+	.content-2{
+		height: 100%;
+		padding-bottom: 20%;
+	}
+
+	.content-2-text{
+		/*color: #1DB6A3;*/
+		width: 100%;
+		padding: 0;
+	}
+
+	.content-2-product > div{
+		float: none;
+		width: 100%;
+	}
+
+	.content-2-product > div > div{
+		margin-left: 10%;
+		width: 80%;
+		height: 100px;
+		margin-bottom: 20px;
+	}
+
+	.content-1-title, .content-1-text p:nth-child(1){
+		font-size: 1.5em;
+	}
+
+	.content-1-text p:nth-child(2){
+		font-size: 1em;
+	}
+
+	.content-2-text{
+		font-size: 1.5em;
+	}
+
+	.content-2 > div{
+		margin: 10px;
+	}
+
+}
